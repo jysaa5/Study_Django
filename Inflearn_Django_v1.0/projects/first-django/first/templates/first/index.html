@@ -1,16 +1,25 @@
+{% extends 'first/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% block content %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="ko">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<p>Hello World!</p>-->
+<!--<img style="width:100px;" src="{% static 'first/pengsoo1.jpg'%}" alt="펭수">-->
+<!--<p>{{ current_date }}</p>-->
+<!--<p>{{ current_date|date:"Y년 m월 d일 H시 i분 s초" }}</p>-->
+<!--<a href="/select/">시작하기!</a>-->
+<!--<a href="{% url 'select' %}">시작하기!</a>-->
+<!--</body>-->
+<!--</html>-->
 <p>Hello World!</p>
 <img style="width:100px;" src="{% static 'first/pengsoo1.jpg'%}" alt="펭수">
 <p>{{ current_date }}</p>
 <p>{{ current_date|date:"Y년 m월 d일 H시 i분 s초" }}</p>
 <a href="/select/">시작하기!</a>
 <a href="{% url 'select' %}">시작하기!</a>
-</body>
-</html>
+{% endblock %}

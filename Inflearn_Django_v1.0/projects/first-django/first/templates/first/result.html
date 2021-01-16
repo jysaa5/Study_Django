@@ -1,14 +1,28 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<ul>
-    {% for num in numbers %}
-    <li>{{ num }}</li>
-    {% endfor %}
-</ul>
-</body>
-</html>
+{% extends 'first/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="ko">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ul>-->
+<!--    {% for num in numbers %}-->
+<!--    <li>{{ num }}</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+    <h3>추천 번호는 다음과 같습니다.</h3>
+    <div style="text-align:left;">
+        <ul>
+            {% for num in numbers %}
+            <li>{{ num }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
