@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=30)
@@ -7,4 +8,4 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    #num_stars = models.IntegerField() #숫자 필드
+    # num_stars = models.IntegerField() #숫자 필드

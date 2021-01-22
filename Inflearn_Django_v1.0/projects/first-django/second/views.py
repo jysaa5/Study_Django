@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from second.models import Post
 from .forms import PostForm
 
+
 # Create your views here.
 def list(request):
     context = {
